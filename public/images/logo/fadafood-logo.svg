@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="100%" height="100%">
+  <defs>
+    <!-- Red banner gradient -->
+    <linearGradient id="fadaRedGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b81619" />
+      <stop offset="25%" stop-color="#cf1f24" />
+      <stop offset="70%" stop-color="#c1181d" />
+      <stop offset="100%" stop-color="#9d1014" />
+    </linearGradient>
+
+    <!-- Golden accent gradient -->
+    <linearGradient id="fadaGoldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f5a623" />
+      <stop offset="40%" stop-color="#ffd000" />
+      <stop offset="100%" stop-color="#f39c12" />
+    </linearGradient>
+
+    <!-- Subtle drop shadow -->
+    <filter id="fadaShadow" x="-10%" y="-10%" width="120%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#550000" flood-opacity="0.3" />
+    </filter>
+
+    <!-- White text glow -->
+    <filter id="whiteGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#700000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <g transform="translate(10, 10)">
+    <!-- 1. Top Golden Crescent Accent -->
+    <path
+      d="M 400 35 C 500 34 600 52 740 98 C 650 78 540 68 410 65 C 400 65 390 65 380 65 C 385 55 392 45 400 35 Z"
+      fill="url(#fadaGoldGrad)"
+    />
+
+    <!-- 2. Main Red Wave Ribbon Banner -->
+    <path
+      d="M 12 182
+         C 80 82 220 22 430 28
+         C 580 32 680 75 742 98
+         C 728 178 698 218 630 252
+         C 460 274 240 262 90 206
+         C 55 194 28 188 12 182 Z"
+      fill="url(#fadaRedGrad)"
+      filter="url(#fadaShadow)"
+    />
+
+    <!-- 3. Bottom Left Golden Swoosh Accent -->
+    <path
+      d="M 8 180
+         C 20 205 75 240 180 258
+         C 120 255 60 238 8 206
+         C 7 197 7 188 8 180 Z"
+      fill="url(#fadaGoldGrad)"
+    />
+
+    <!-- Secondary golden trim inside red banner -->
+    <path
+      d="M 14 180
+         C 28 200 80 236 175 252
+         C 160 254 140 254 120 252
+         C 65 240 25 210 14 180 Z"
+      fill="#ffbe00"
+      opacity="0.9"
+    />
+
+    <path
+      d="M 410 32
+         C 520 33 620 54 736 94
+         C 700 84 620 68 500 58
+         C 460 55 430 52 410 50
+         Z"
+      fill="#ffbe00"
+      opacity="0.85"
+    />
+
+    <!-- 4. Main White Brand Typography: "Fadafood" -->
+    <text
+      x="375"
+      y="172"
+      text-anchor="middle"
+      fill="#ffffff"
+      font-family="'Times New Roman', 'Baskerville', 'Playfair Display', 'Georgia', serif"
+      font-size="118"
+      font-style="italic"
+      font-weight="900"
+      letter-spacing="-1px"
+      filter="url(#whiteGlow)"
+    >
+      Fadafood
+    </text>
+
+    <!-- 5. Subtitle Script Typography: "Arabian Cuisine Specialist" -->
+    <g transform="translate(375, 305)">
+      <text
+        x="0"
+        y="0"
+        text-anchor="middle"
+        fill="#b81619"
+        font-family="'Brush Script MT', 'Great Vibes', 'Dancing Script', 'Snell Roundhand', 'Segoe Script', cursive, sans-serif"
+        font-size="64"
+        font-style="italic"
+        font-weight="600"
+        letter-spacing="1px"
+      >
+        Arabian Cuisine Specialist
+      </text>
+    </g>
+  </g>
+</svg>

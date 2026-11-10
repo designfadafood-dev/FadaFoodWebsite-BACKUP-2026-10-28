@@ -1,0 +1,8 @@
+{
+  "name": "Fada Food - Spesialis Masakan Arab & Beras Basmati",
+  "description": "Website profil dan katalog produk resmi CV. Fada Food terinspirasi Lemonilo: paket nasi Arab instan Merhan, bumbu Zaffrona, rempah Fada, dan beras basmati premium.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
